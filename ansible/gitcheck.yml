@@ -1,0 +1,8 @@
+---
+  - name: check git
+    hosts: linuxmachines
+    tasks:
+      - name: check git installation
+        apt:
+          name: git
+          state: latest
